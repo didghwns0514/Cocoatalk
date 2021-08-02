@@ -15,6 +15,7 @@
   1. Tag names
   2. class names #
   3. id name .
+  4. \* selects every tags
 
 ## 2) Blocks and inlines
 
