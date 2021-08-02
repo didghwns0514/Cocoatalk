@@ -22,17 +22,18 @@
   ![](images/2021-08-01-18-50-12.png)
 - Basic Box is configured from \<div>\</div>
 
-1. **`Not allow other elemnets next to itself.`**
+1. **`Block : Not allow other elemnets next to itself.`**
 
-   > Note : This is also called "block"
+   > Note : This is called "block"
+   > Also called "box"
 
    - Div, body, header, main, section, article, footer... everything will not allow any content next to itself.
      - Even with 150px X 150px with Div, nothing comes next.
        ![](images/2021-08-01-19-32-27.png)
 
-2. Allow other elemnets next to itself.
-   > Note : This is same as inline(in the same line)
-   > Also called "box"
+2. Inline : Allows other elemnets next to itself.
+
+   > Note : This is same as inline(in the same line.
    >
    > > Easier to remember tags that are inlines, many of the tags are blocks.
    > >
