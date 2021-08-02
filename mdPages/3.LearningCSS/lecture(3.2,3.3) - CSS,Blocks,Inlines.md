@@ -1,3 +1,5 @@
+<link href="../md_config/style.css" rel="stylesheet">
+
 # css
 
 ## 1) Cascading Style sheet
@@ -40,7 +42,12 @@
    > >
    > > 1. Span
    > > 2. a
-   > > 3. image
+   > > 3. image  
+   > >    <span style="color:red">Very important : inlines don't have width & height</span>  
+   > >    <span style="color:red">They have padding all directions</span>  
+   > >    <span style="color:red">They don't have margins on top and bottom, but have margins on right and left</span>
+
+   <img src="images/2021-08-03-01-50-59.png">
 
 - Span will allow something next to itself.
   ![](images/2021-08-01-20-58-32.png)
