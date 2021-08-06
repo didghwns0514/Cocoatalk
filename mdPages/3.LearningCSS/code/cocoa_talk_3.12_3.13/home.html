@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Classes Homepage</title>
+    <meta name="Homepage of HJY of Classes" content="This webpage is about CSS classes" charset="utf-8" />
+  </head>
+
+  <style>
+    * {
+      /* border: 2px black solid; */
+    }
+    header {
+      margin-top: 10%;
+    }
+    main {
+      height: 1000vh;
+      /* height: 100vh; */
+      margin: 20px;
+    }
+    div {
+      /* position: fixed; */
+
+      width: 300px;
+      height: 300px;
+      color: rgb(23, 48, 68);
+      /* position: relative; */
+    }
+    #different {
+      width: 300px;
+      height: 30px;
+      top: 5px;
+      position: fixed;
+
+      background-color: wheat;
+    }
+    #red {
+      background-color: tomato;
+      position: relative;
+    }
+    #green {
+      position: relative;
+      margin: 5px;
+      top: 5px;
+      left: 5px;
+
+      background-color: teal;
+      height: 70px;
+      width: 70px;
+    }
+    #yellow {
+      position: absolute;
+      right: 0px;
+
+      background-color: rgb(203, 203, 101);
+      height: 70px;
+      width: 70px;
+    }
+  </style>
+  <link />
+
+  <body>
+    <header>
+      <h1>Classes</h1>
+    </header>
+
+    <main>
+      <article>
+        <content>
+          <div id="different">2</div>
+          <div id="red">
+            <div id="green">Relative</div>
+            <div id="yellow">Absolute</div>
+          </div>
+        </content>
+      </article>
+    </main>
+
+    <fotter>
+      <address>Junga-Ro 146 st</address>
+      &copy HJ Yang
+    </fotter>
+  </body>
+</html>

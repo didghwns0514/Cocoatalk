@@ -30,9 +30,15 @@
       justify-content: space-between;
       align-items: center;
       height: 100vh;
+
+      flex-wrap: wrap;
     }
     div {
-      width: 170px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
       height: 150px;
       background-color: teal;
     }
@@ -47,9 +53,9 @@
     <main>
       <article>
         <content>
-          <div></div>
-          <div style="background-color: red"></div>
-          <div></div>
+          <div>1</div>
+          <div style="background-color: red">2</div>
+          <div>3</div>
         </content>
       </article>
     </main>
