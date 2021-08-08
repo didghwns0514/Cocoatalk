@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <title>Combinators</title>
+    <meta name="Website for Combinators" content="To learn about combinators in CSS" charset="utf-8" />
+
+    <style>
+      .top-navs {
+        list-style-type: none;
+        display: block;
+      }
+      .top-nav {
+        display: inline-block;
+      }
+
+      content {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: auto;
+        height: 150px;
+        background-color: wheat;
+        position: relative;
+      }
+
+      span {
+        background-color: cadetblue;
+        color: tomato;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      div > span {
+        text-decoration: underline;
+        background-color: thistle;
+      }
+
+      p span {
+        color: teal;
+      }
+
+      div > p + span {
+        background-color: violet;
+        color: navy;
+      }
+    </style>
+    <link href="" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Persudo selectors homepage!</h1>
+      <nav>
+        <ul class="top-navs">
+          <li class="top-nav"><a href="#">Item 1</a></li>
+          <li class="top-nav"><a href="#">Item 2</a></li>
+          <li class="top-nav"><a href="#">Item 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <content>
+          <div>
+            <span>Hello !</span>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi esequi ispam odio dolorem. <span>inside</span></p>
+
+            <span>Brother of p-tag</span>
+          </div>
+          <p>Ignore me!</p>
+        </content>
+      </article>
+    </main>
+
+    <footer>
+      <address>Kyunki-Do JungJa-Ro 146 St.</address>
+      &copy HoJun Yang;
+    </footer>
+  </body>
+</html>
