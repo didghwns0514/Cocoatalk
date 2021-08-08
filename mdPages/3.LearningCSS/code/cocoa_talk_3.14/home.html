@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <title>Persudo selectors</title>
+    <meta name="Website for selecting Persudo selectors" content="How to select them, what CSS properties to use" charset="utf-8" />
+
+    <style>
+      .top-navs {
+        list-style-type: none;
+        display: block;
+      }
+      .top-nav {
+        display: inline-block;
+      }
+      span {
+        font-size: 20px;
+        margin: 5px;
+        /* display: block; */
+        height: 30px;
+        width: auto;
+      }
+      span:nth-child(even) {
+        background-color: whitesmoke;
+      }
+      span:nth-child(4n + 1) {
+        background-color: red;
+      }
+      content {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: auto;
+        height: 150px;
+        background-color: wheat;
+        position: relative;
+      }
+
+      div:last-child {
+        background-color: teal;
+      }
+      div:nth-child(2) {
+        background-color: rgb(111, 139, 55);
+      }
+      div:first-child {
+        background-color: tomato;
+      }
+    </style>
+    <link href="" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Persudo selectors homepage!</h1>
+      <nav>
+        <ul class="top-navs">
+          <li class="top-nav"><a href="#">Item 1</a></li>
+          <li class="top-nav"><a href="#">Item 2</a></li>
+          <li class="top-nav"><a href="#">Item 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <content>
+          <div></div>
+          <div>
+            <span>Hello 1</span>
+            <span>Hello 2</span>
+            <span>Hello 3</span>
+            <span>Hello 4</span>
+            <span>Hello 5</span>
+            <span>Hello 6</span>
+            <span>Hello 7</span>
+            <span>Hello 8</span>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </content>
+      </article>
+    </main>
+
+    <footer>
+      <address>Kyunki-Do JungJa-Ro 146 St.</address>
+      &copy HoJun Yang;
+    </footer>
+  </body>
+</html>
