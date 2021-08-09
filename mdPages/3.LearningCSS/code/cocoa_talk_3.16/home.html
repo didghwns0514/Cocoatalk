@@ -2,8 +2,8 @@
 
 <html lang="ko">
   <head>
-    <title>Combinators</title>
-    <meta name="Website for Combinators" content="To learn about combinators in CSS" charset="utf-8" />
+    <title>Psuedo</title>
+    <meta name="Website for Psuedo" content="To learn about Psuedo in CSS" charset="utf-8" />
 
     <style>
       .top-navs {
@@ -24,25 +24,22 @@
         background-color: wheat;
         position: relative;
       }
-
-      span {
-        background-color: cadetblue;
-        color: tomato;
-        padding: 5px;
-        border-radius: 10px;
+      input::placeholder {
+        color: rgb(21, 22, 18);
+        /* color: red; */
       }
-      div > span {
-        text-decoration: underline;
-        background-color: thistle;
+      input:required {
+        border-width: 3px;
+        border-style: solid;
+        border-color: navy;
       }
-
-      p span {
-        color: teal;
+      input[type="password"] {
+        background-color: olivedrab;
+        opacity: 80%;
       }
-
-      div > p ~ span {
-        background-color: violet;
-        color: navy;
+      input[placeholder~="Name"] {
+        background-color: lightsalmon;
+        opacity: 80;
       }
     </style>
     <link href="" rel="stylesheet" />
@@ -50,7 +47,7 @@
 
   <body>
     <header>
-      <h1>Persudo selectors homepage!</h1>
+      <h1>Psuedo selectors homepage!</h1>
       <nav>
         <ul class="top-navs">
           <li class="top-nav"><a href="#">Item 1</a></li>
@@ -64,13 +61,12 @@
       <article>
         <content>
           <div>
-            <span>Hello !</span>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi esequi ispam odio dolorem. <span>inside</span></p>
-            <aside>This is Aside</aside>
-            <span>Brother of p-tag</span>
+            <form>
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+              <input type="password" required placeholder="password" />
+            </form>
           </div>
-          <p>Ignore me!</p>
         </content>
       </article>
     </main>

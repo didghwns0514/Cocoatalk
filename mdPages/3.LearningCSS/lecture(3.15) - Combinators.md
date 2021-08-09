@@ -211,3 +211,50 @@
     - Works same as (4) example
 
     <img src='images/2021-08-08-15-46-26.png' />
+
+## 5) Select Brothers not right next to a tag
+
+- Example 1 : Not working properly
+
+  - HTML
+
+    ```HTML
+      <content>
+        <div>
+          <span>Hello !</span>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi esequi ispam odio dolorem. <span>inside</span></p>
+          <aside>This is Aside</aside>
+          <span>Brother of p-tag</span>
+        </div>
+        <p>Ignore me!</p>
+      </content>
+    ```
+
+  - CSS
+
+    ```CSS
+    p span {
+      color: teal;
+    }
+
+    div > p + span {
+      background-color: violet;
+      color: navy;
+    }
+    ```
+
+  - Result
+    <img src='images/2021-08-09-20-41-14.png' />
+
+- Example 2 : Working properly with /~ combinator
+
+  - CSS
+    ```CSS
+    div > p ~ span {
+      background-color: violet;
+      color: navy;
+    }
+    ```
+  - Result
+    <img src='images/2021-08-09-20-42-35.png' />
