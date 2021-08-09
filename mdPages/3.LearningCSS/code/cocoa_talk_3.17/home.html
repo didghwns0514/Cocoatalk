@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <title>Psuedo</title>
+    <meta name="Website for Psuedo" content="To learn about Psuedo in CSS" charset="utf-8" />
+
+    <style>
+      .top-navs {
+        list-style-type: none;
+        display: block;
+      }
+      .top-nav {
+        display: inline-block;
+      }
+
+      content {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: auto;
+        height: 150px;
+        background-color: wheat;
+        position: relative;
+      }
+      input::placeholder {
+        color: rgb(21, 22, 18);
+        /* color: red; */
+      }
+      input:required {
+        border-width: 3px;
+        border-style: solid;
+        border-color: navy;
+      }
+      input[type="password"] {
+        background-color: olivedrab;
+        opacity: 80%;
+      }
+      input[placeholder~="Name"] {
+        background-color: lightsalmon;
+        opacity: 80;
+      }
+    </style>
+    <link href="" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Psuedo selectors homepage!</h1>
+      <nav>
+        <ul class="top-navs">
+          <li class="top-nav"><a href="#">Item 1</a></li>
+          <li class="top-nav"><a href="#">Item 2</a></li>
+          <li class="top-nav"><a href="#">Item 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <content>
+          <div>
+            <form>
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+              <input type="password" required placeholder="password" />
+            </form>
+          </div>
+        </content>
+      </article>
+    </main>
+
+    <footer>
+      <address>Kyunki-Do JungJa-Ro 146 St.</address>
+      &copy HoJun Yang;
+    </footer>
+  </body>
+</html>
