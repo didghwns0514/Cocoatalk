@@ -6,7 +6,7 @@
 
   - More complex way of selecting elements in CSS like ., # s do.
   - . : class
-  - # : id
+  - \# : id
   - Nothing : tag names
 
 - When to use?

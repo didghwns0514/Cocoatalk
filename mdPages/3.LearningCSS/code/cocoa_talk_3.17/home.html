@@ -2,8 +2,8 @@
 
 <html lang="ko">
   <head>
-    <title>Psuedo</title>
-    <meta name="Website for Psuedo" content="To learn about Psuedo in CSS" charset="utf-8" />
+    <title>State</title>
+    <meta name="Website for State" content="To learn about State in CSS" charset="utf-8" />
 
     <style>
       .top-navs {
@@ -14,32 +14,60 @@
         display: inline-block;
       }
 
-      content {
-        height: 1000vh;
-        margin: 50px;
+      article {
+        max-height: 40vh;
+        margin: 5px;
+        /* display: block; */
+        background-color: cadetblue;
       }
-      div {
-        width: auto;
-        height: 150px;
-        background-color: wheat;
-        position: relative;
+
+      form {
+        /* border: 2px solid yellowgreen; */
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
       }
-      input::placeholder {
-        color: rgb(21, 22, 18);
-        /* color: red; */
+      form:hover input {
+        background-color: red;
       }
-      input:required {
-        border-width: 3px;
+      article :focus-within {
+        /* border: 10px soild tomato; */
+        border-color: yellowgreen;
         border-style: solid;
-        border-color: navy;
+        border-width: 10px;
       }
-      input[type="password"] {
-        background-color: olivedrab;
-        opacity: 80%;
+
+      section:nth-child(3) > article ~ article {
+        background-color: papayawhip;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
       }
-      input[placeholder~="Name"] {
-        background-color: lightsalmon;
-        opacity: 80;
+      a[id~="link-block"] {
+        width: 120px;
+        color: rgb(31, 32, 29);
+        display: block;
+        border: 3px dotted;
+        font-weight: bold;
+      }
+      a:visited {
+        color: rgb(71, 179, 71);
+        font-style: oblique;
+      }
+      button {
+        width: 80px;
+        height: 50px;
+      }
+      button:active {
+        background-color: cornflowerblue;
+      }
+      button:hover {
+        color: orange;
+      }
+      input:focus {
+        background-color: palegreen;
+        border-style: none;
       }
     </style>
     <link href="" rel="stylesheet" />
@@ -47,7 +75,6 @@
 
   <body>
     <header>
-      <h1>Psuedo selectors homepage!</h1>
       <nav>
         <ul class="top-navs">
           <li class="top-nav"><a href="#">Item 1</a></li>
@@ -58,17 +85,31 @@
     </header>
 
     <main>
-      <article>
-        <content>
-          <div>
-            <form>
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
-              <input type="password" required placeholder="password" />
-            </form>
-          </div>
-        </content>
-      </article>
+      <h1>State homepage!</h1>
+      <section>
+        <h2>Section 1</h2>
+        <article>
+          <form>
+            <button>Hello</button>
+          </form>
+        </article>
+      </section>
+      <section>
+        <h2>Input tags</h2>
+        <article>
+          <form>
+            <input type="text" required placeholder="" name="" id="" />
+            <input type="text" required placeholder="" name="" id="" />
+            <input type="text" required placeholder="" name="" id="" />
+          </form>
+        </article>
+        <h2>Link 1</h2>
+        <article>
+          <a id="link-block apple" href="https://apple.com">Go to Apple.com</a>
+          <a id="link-block abc" href="https://abc.com">Go to abc.com</a>
+        </article>
+      </section>
+      <aside></aside>
     </main>
 
     <footer>

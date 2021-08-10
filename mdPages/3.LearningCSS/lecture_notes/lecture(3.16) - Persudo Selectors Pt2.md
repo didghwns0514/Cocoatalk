@@ -37,7 +37,7 @@
      - Result
        <img src='images/2021-08-09-20-57-06.png' />
 
-2. Selecting Attributs
+## 2) Selecting Attributs
 
 - [ **`Link for more description in MDN selectors`** ](https://developer.mozilla.org/ko/docs/Web/CSS/Attribute_selectors)
 
