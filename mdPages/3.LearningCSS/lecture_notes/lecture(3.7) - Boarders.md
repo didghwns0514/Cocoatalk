@@ -1,3 +1,5 @@
+<link href="../md_config/style.css" rel="stylesheet">
+
 # Borders
 
 ## 1) What is Borders
@@ -42,5 +44,3 @@
       ```
 
       <img src="images/2021-08-03-01-24-34.png"/>
-
-

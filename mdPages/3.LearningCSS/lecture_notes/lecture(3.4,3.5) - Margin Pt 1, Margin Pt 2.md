@@ -1,3 +1,5 @@
+<link href="../md_config/style.css" rel="stylesheet">
+
 # Margin
 
 ## 1) Can you change inline to block?
@@ -34,10 +36,8 @@
 
 - **`Space from boarder to the outside.`**
 - If you want to get rid of it, `**give "margin:0px" property to the body**` or any other tags that needs such.
-- Example
-  ![](images/2021-08-02-10-45-53.png)
-  - You will automatically have margins in the body tag given by the browser.
-    (Red area)
+- Example ![](images/2021-08-02-10-45-53.png)
+  - You will automatically have margins in the body tag given by the browser. (Red area)
 - How to give CSS propety?
   > 1. **`Syntax of Margin`**  
   >    Margin(single pixel) or Margin-left, Margin-right ... and so on.
@@ -49,8 +49,8 @@
 ### 2) Collapsing margins
 
 - Will only happen vertically
-- Example
-  ![](images/2021-08-02-11-04-00.png)
+- Example  
+   ![](images/2021-08-02-11-04-00.png)
 
   ```HTML
       div {
