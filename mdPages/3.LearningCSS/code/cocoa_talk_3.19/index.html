@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <title>State</title>
+    <meta name="Website for State" content="To learn about State in CSS" charset="utf-8" />
+
+    <style>
+      :root {
+        --main-color: #fcce00;
+        --border-color: rgb(26, 71, 26);
+        --default-border: 1.5px solid var(--border-color);
+      }
+
+      p {
+        background-color: var(--main-color);
+      }
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
+      }
+
+      .top-navs {
+        list-style-type: none;
+        display: block;
+      }
+      .top-nav {
+        display: inline-block;
+      }
+    </style>
+    <link href="" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="top-navs">
+          <li class="top-nav"><a href="#">Item 1</a></li>
+          <li class="top-nav"><a href="#">Item 2</a></li>
+          <li class="top-nav"><a href="#">Item 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Header1</h1>
+      <section>
+        <article>
+          <div>
+            <p>
+              행복의 문이 하나 닫히면 다른 문이 열린다 그러나 우리는 종종 닫힌 문을 멍하니 바라보다가 우리를 향해 열린 문을 보지 못하게 된다
+              – 헬렌켈러
+            </p>
+            <a href="#">Website link</a>
+          </div>
+        </article>
+      </section>
+      <aside></aside>
+    </main>
+
+    <footer>
+      <address>Kyunki-Do JungJa-Ro 146 St.</address>
+      &copy HoJun Yang;
+    </footer>
+  </body>
+</html>
