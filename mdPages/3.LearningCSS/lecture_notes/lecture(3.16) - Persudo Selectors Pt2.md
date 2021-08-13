@@ -95,3 +95,65 @@
          ```
        - Result
          <img src='images/2021-08-09-21-11-05.png' />
+
+  3. Special Pseudo selectors
+
+  1) ::placeholder
+
+     - This has 2; '::'
+     - This Selects the placeholder of input
+     - Example
+
+       - HTML
+         ```HTML
+           <content>
+             <div>
+               <form>
+                 <input type="text" placeholder="First Name" />
+                 <input type="text" placeholder="Last Name" />
+                 <input type="password" required placeholder="password" />
+               </form>
+             </div>
+           </content>
+         ```
+       - CSS
+         ```CSS
+           input::placeholder {
+             color: whitesmoke;
+           }
+         ```
+       - Result
+
+          <img src='images/2021-08-13-20-46-26.png' />
+
+  2) :: Selection
+
+  - This is effected when the element or Contents in element is selected
+  - Example
+
+    - HTML
+      ```HTML
+        <div>
+          <p>
+            행복의 문이 하나 닫히면 다른 문이 열린다 그러나 우리는 종종 닫힌 문을 멍하니 바라보다가 우리를 향해 열린 문을 보지 못하게 된다
+            – 헬렌켈러
+          </p>
+        </div>
+      ```
+    - CSS
+      ```CSS
+        p::selection {
+          background-color: turquoise;
+        }
+      ```
+    - Result
+
+      <img src='images/2021-08-13-20-51-15.png' />
+
+  3. ::first-letter
+
+     - You can alter the First letter
+
+  4. ::first-line
+
+     - You can alter the whole First line
