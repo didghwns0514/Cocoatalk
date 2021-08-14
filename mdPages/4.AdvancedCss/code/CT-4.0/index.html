@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <title>HJ times</title>
+    <meta name="HJ times for Transitions" content="This webpage is for Transitions demo" charset="utf-8" />
+    <style>
+      .top-navs {
+        list-style-type: none;
+        display: block;
+      }
+      .top-nav {
+        display: inline-block;
+      }
+      section {
+        margin: 5px;
+        height: 30vh;
+        max-height: 60vh;
+        background-color: wheat;
+        padding: 8px;
+      }
+
+      section a {
+        color: white;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 30px;
+        transition: background-color 10s ease-in-out, color 5s ease-in-out;
+
+        /* We can also do this */
+        transition: all 5s ease-in-out;
+      }
+      section a:hover {
+        color: tomato;
+        background-color: white;
+      }
+    </style>
+    <link />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="top-navs">
+          <li class="top-nav"><a href="#">Item1</a></li>
+          <li class="top-nav"><a href="#">Item2</a></li>
+          <li class="top-nav"><a href="#">Item3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <div>
+            <a href="#">Go Home</a>
+          </div>
+        </article>
+      </section>
+      <aside></aside>
+    </main>
+    <footer>
+      <address>Kyunki-Do Bundang-Ro 146 St.</address>
+      &copy HJ Yang;
+    </footer>
+  </body>
+</html>
