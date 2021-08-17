@@ -23,38 +23,41 @@
         max-height: 60vh;
         background-color: wheat;
         padding: 8px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
-      @keyframes coinFlippersYay {
-        0% {
-          transform: rotateX(0);
-        }
-        50% {
-          transform: rotateY(180deg) translateY(-50px);
-        }
-        100% {
-          transform: rotateY(360deg) rotateX(360);
+
+      section article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      section div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+
+      span.is-landscape {
+        font-weight: bold;
+        font-size: 36px;
+      }
+
+      @media screen and (min-width: 550px) and (max-width: 660px) {
+        section div {
+          background-color: tomato;
         }
       }
 
-      section a {
-        color: white;
-        background-color: tomato;
-        text-decoration: none;
-        padding: 3px 5px;
-        border-radius: 5px;
-        font-size: 30px;
-      }
-
-      section img {
-        margin: 5px;
-        height: 100px;
-        width: 100px;
-        border: 3px solid grey;
-        border-radius: 50%;
-        animation: coinFlippersYay 5s ease-in-out infinite;
-      }
-      section img:hover {
-        transform: rotateY(70deg) rotateX(20deg) scaleX(1.2) translateY(-20px);
+      @media screen and (orientation: portrait) {
+        span {
+          display: none;
+        }
       }
     </style>
     <link />
@@ -74,12 +77,8 @@
     <main>
       <section>
         <article>
-          <div>
-            <a href="#">Go Home</a>
-          </div>
-          <div>
-            <img src="img/hj_logo.png" />
-          </div>
+          <div></div>
+          <span class="is-landscape">Please Flip your Phone!</span>
         </article>
       </section>
       <aside></aside>
