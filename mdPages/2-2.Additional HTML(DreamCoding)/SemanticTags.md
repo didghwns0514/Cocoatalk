@@ -121,7 +121,7 @@
 
 <br>
 
-## 9) button VS a
+## 9) button VS a VS "input type=submit"
 
 - 둘다 CSS로 스타일링을 해놓으면 버튼처럼 보이기는 하기 때문에, 헷갈림
 - a Tag
@@ -148,6 +148,9 @@
         </form>
         <button type="submit" form="loginForm">제출하기</button>
       ```
+
+- input type="submit"
+  - button으로 form id를 특정하지 않더라도, 보낼 수 있는 방식인 듯
 
 ## 10) table VS CSS
 
